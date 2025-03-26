@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-box-and-violin-plot@4.1.0/build/Chart.BoxPlot.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Student Performance Dashboard</h1>
+            <div class="view-controls">
+                <button class="view-btn active" data-view="overview">Overview</button>
+                <button class="view-btn" data-view="performance">Performance Analysis</button>
+                <button class="view-btn" data-view="features">Feature Analysis</button>
+                <button class="view-btn" data-view="correlation">Correlation Analysis</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="view" id="overview">
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <h3>Total Students</h3>
+                        <p id="total-students">-</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Average Performance</h3>
+                        <p id="avg-performance">-</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Features</h3>
+                        <p id="total-features">-</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="performance-pie"></canvas>
+                </div>
+            </div>
+
+            <div class="view hidden" id="performance">
+                <div class="chart-container">
+                    <canvas id="performance-distribution"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="feature-trends"></canvas>
+                </div>
+            </div>
+
+            <div class="view hidden" id="features">
+                <div class="chart-container">
+                    <canvas id="feature-distribution"></canvas>
+                </div>
+                <div class="stats-table">
+                    <h3>Feature Statistics</h3>
+                    <table id="feature-stats">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Mean</th>
+                                <th>Std Dev</th>
+                                <th>Min</th>
+                                <th>Max</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="view hidden" id="correlation">
+                <div class="chart-container">
+                    <canvas id="correlation-heatmap"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

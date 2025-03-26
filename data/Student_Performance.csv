@@ -1,0 +1,21 @@
+Student ID,Age,Gender,Race/Ethnicity,Parental Level of Education,Lunch,Test Preparation Course,Math Score,Reading Score,Writing Score,Performance Index
+1,18,Female,Group B,Bachelor's Degree,Standard,None,72,72,74,72.67
+2,17,Male,Group C,Some College,Standard,Completed,69,90,88,82.33
+3,15,Female,Group B,Master's Degree,Standard,None,90,95,93,92.67
+4,15,Male,Group A,Associate's Degree,Free/Reduced,None,47,57,44,49.33
+5,16,Female,Group B,College,Standard,None,76,78,75,76.33
+6,16,Male,Group C,College,Standard,None,71,83,78,77.33
+7,16,Female,Group B,Master's Degree,Standard,Completed,88,95,92,91.67
+8,17,Male,Group B,Some College,Standard,None,40,43,39,40.67
+9,15,Male,Group D,High School,Free/Reduced,Completed,64,64,67,65.00
+10,17,Female,Group B,High School,Free/Reduced,None,38,60,50,49.33
+11,15,Female,Group C,Some College,Standard,None,58,72,65,65.00
+12,16,Male,Group B,Some College,Standard,Completed,40,38,40,39.33
+13,16,Female,Group B,College,Standard,None,65,81,73,73.00
+14,16,Female,Group D,Master's Degree,Standard,Completed,78,72,70,73.33
+15,17,Male,Group C,College,Standard,None,88,95,76,86.33
+16,17,Female,Group B,High School,Standard,None,92,100,97,96.33
+17,18,Male,Group A,Some College,Standard,Completed,68,57,68,64.33
+18,17,Female,Group B,College,Standard,None,57,68,73,66.00
+19,17,Male,Group C,College,Standard,Completed,88,95,93,92.00
+20,16,Female,Group B,Master's Degree,Standard,None,71,84,87,80.67 
