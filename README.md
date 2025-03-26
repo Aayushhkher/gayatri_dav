@@ -1,76 +1,78 @@
-# Student Performance Analysis Dashboard
+# Student Performance Dashboard
 
-This project includes a data downloader and an interactive dashboard for analyzing student performance data.
+An interactive dashboard for analyzing student performance data, built with Streamlit and Plotly.
 
-## Prerequisites
+## Features
 
-1. Python 3.7 or higher
-2. Kaggle API credentials
+- 📊 Interactive visualizations
+- 🔍 Filter data by gender and parental education
+- 📈 Performance distribution analysis
+- 📚 Subject-wise performance comparison
+- 👥 Gender-based performance analysis
+- 🔗 Feature correlation analysis
+- 📋 Detailed data table view
 
-## Setup Instructions
+## Live Demo
 
-1. Install the required packages:
-```bash
-pip install -r requirements.txt
+Visit the live dashboard at: [Student Performance Dashboard](https://student-performance-dashboard.streamlit.app)
+
+## Local Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Aayushhkher/gayatri_dav.git
+   cd gayatri_dav
+   ```
+
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the dashboard:
+   ```bash
+   streamlit run app.py
+   ```
+
+5. Open your browser and navigate to http://localhost:8501
+
+## Project Structure
+
+```
+gayatri_dav/
+├── app.py                 # Main Streamlit application
+├── data/                  # Data directory
+│   └── Student_Performance.csv
+├── requirements.txt       # Project dependencies
+└── README.md             # Project documentation
 ```
 
-2. Set up your Kaggle API credentials:
-   - Go to your Kaggle account settings (https://www.kaggle.com/settings)
-   - Scroll to the "API" section
-   - Click "Create New API Token"
-   - This will download a `kaggle.json` file
-   - Create a directory at `~/.kaggle/` and place the `kaggle.json` file there
-   - Set the appropriate permissions:
-     ```bash
-     mkdir -p ~/.kaggle
-     mv kaggle.json ~/.kaggle/
-     chmod 600 ~/.kaggle/kaggle.json
-     ```
+## Data Description
 
-## Usage
+The dataset includes:
+- Student demographics (age, gender, race/ethnicity)
+- Parental education level
+- Lunch type
+- Test preparation course status
+- Performance scores in Math, Reading, and Writing
+- Overall performance index
 
-1. First, download the dataset:
-```bash
-python download_student_data.py
-```
+## Deployment
 
-2. Launch the dashboard:
-```bash
-streamlit run dashboard.py
-```
+This dashboard is deployed on Streamlit Cloud. To deploy your own version:
 
-The dashboard will open in your default web browser.
+1. Fork this repository
+2. Go to [Streamlit Cloud](https://share.streamlit.io/)
+3. Connect your GitHub account
+4. Select your forked repository
+5. Deploy!
 
-## Dashboard Features
+## Contributing
 
-The dashboard provides several views for analyzing the student performance data:
-
-1. **Overview**
-   - Basic statistics about the dataset
-   - Data preview
-   - Feature distribution visualization
-
-2. **Correlation Analysis**
-   - Correlation heatmap
-   - Interactive scatter plots between features
-
-3. **Performance Distribution**
-   - Distribution of performance index
-   - Box plots showing feature impact on performance
-
-4. **Feature Analysis**
-   - Comparison of normalized vs original data
-   - Detailed feature statistics
-
-## Dataset Information
-
-The downloaded dataset contains information about student performance, including:
-- Hours studied
-- Previous scores
-- Sleep hours
-- Sample question papers practiced
-- And more
-
-The data is saved in two formats:
-- Original dataset: `./data/Student_Performance.csv`
-- Clean dataset: `./data/student_performance_clean.csv` 
+Feel free to submit issues and enhancement requests! 
